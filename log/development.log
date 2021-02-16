@@ -86,3 +86,41 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 570ms (Views: 567.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/articles/new" for 172.91.77.201 at 2021-02-16 00:59:54 +0000
+Cannot render console from 172.91.77.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (16.4ms)
+  Rendered articles/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 40ms (Views: 27.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles" for 172.91.77.201 at 2021-02-16 00:59:57 +0000
+Cannot render console from 172.91.77.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 172.91.77.201 at 2021-02-16 00:59:58 +0000
+Cannot render console from 172.91.77.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.7ms)
+  Rendered articles/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 172.91.77.201 at 2021-02-16 00:59:59 +0000
+Cannot render console from 172.91.77.201! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/YtrhcI1XJ47VvinIBwT7ognABisM9AqBXqKzmENMnNT2Uws+biNhqIz9Y6+4R1h1IKFqvbTjsoeq10ubEoKxw==", "article"=>{"title"=>"", "body"=>""}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["body", ""], ["created_at", "2021-02-16 00:59:59.536335"], ["updated_at", "2021-02-16 00:59:59.536335"]]
+  [1m[35m (49.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.31.208:55763/articles/1
+Completed 302 Found in 58ms (ActiveRecord: 49.8ms)
+
+
